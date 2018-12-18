@@ -27,7 +27,7 @@ const List = styled.ul`
   position: relative;
   top: 20%;
   outline: none;
-  ${media.tablet`display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;`};
+  ${media.tablet`display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; right: 4%;`};
   -webkit-tap-highlight-color: transparent;
   & .icon {
     color: wheat;
@@ -36,7 +36,7 @@ const List = styled.ul`
     font-size: 2rem;
     width: 100%;
     height: 20%;
-    ${media.tablet`font-size: 1.8em;  padding:0;`};
+    ${media.tablet`font-size: 1.8em;  padding:0; `};
     color: white;
     margin-bottom: 40px;
     & p {
