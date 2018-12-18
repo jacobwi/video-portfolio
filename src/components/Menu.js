@@ -26,16 +26,14 @@ const List = styled.ul`
   list-style-type: none;
   position: relative;
   top: 20%;
-  right: 10%;
   outline: none;
-  margin-left: 30px;
   ${media.tablet`display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;`};
   -webkit-tap-highlight-color: transparent;
   & .icon {
     color: wheat;
   }
   & li {
-    
+    font-size: 2rem;
     width: 100%;
     height: 20%;
     ${media.tablet`font-size: 1.8em;  padding:0;`};
@@ -43,10 +41,8 @@ const List = styled.ul`
     margin-bottom: 40px;
     & p {
       ${media.tablet` left:10%;  padding: 0 0 0 0; margin: 0; `};
-      padding: 2px 4px;
       display: none;
-      font-size: 12px;
-
+      font-size: 18px;
     }
 
     &:hover {
@@ -57,7 +53,8 @@ const List = styled.ul`
       }
       & .icon_text {
         position: relative;
-        right: 22%;
+        right: 28%;
+        text-align: justify;
         display: block;
         &:focus {
           outline: none;
@@ -91,7 +88,7 @@ class Menu extends React.Component {
           <List>
             <CustomLink to='/'><li><Icons.FaHome className="icon"/><p className="icon_text">Home</p></li></CustomLink>
             <CustomLink to='/about'><li><Icons.FaUser className="icon"/><p className="icon_text">About</p></li></CustomLink>
-            <CustomLink to='/background'><li><Icons.FaToolbox className="icon"/><p className="icon_text">Exp.</p></li></CustomLink>
+            <CustomLink to='/background'><li><Icons.FaToolbox className="icon"/><p className="icon_text">Exper.</p></li></CustomLink>
             <CustomLink to='/projects'><li><Icons.FaProjectDiagram className="icon"/><p className="icon_text">Projects</p></li></CustomLink>
           </List>
         </Sidebar>
