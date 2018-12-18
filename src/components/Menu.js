@@ -38,7 +38,7 @@ const List = styled.ul`
 
     width: 100%;
     height: 20%;
-    ${media.tablet`display: grid; width: 100px; grid-template-columns: 1fr 1fr 1fr 1fr; margin:0; padding:0;`};
+    ${media.tablet`display: grid; width: 100px; grid-template-columns: 1fr 1fr 1fr 1fr; margin-left: 40px; padding:0;`};
     color: white;
     margin-bottom: 40px;
     & p {
