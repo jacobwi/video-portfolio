@@ -29,21 +29,20 @@ const List = styled.ul`
   right: 10%;
   outline: none;
   margin-left: 30px;
-  ${media.tablet`display: flex;  margin: 0 !important; text-align: center;`};
+  ${media.tablet`display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;`};
   -webkit-tap-highlight-color: transparent;
   & .icon {
-    font-size: 1.8em;
     color: wheat;
   }
   & li {
-
+    
     width: 100%;
     height: 20%;
-    ${media.tablet`display: grid; width: 100px; grid-template-columns: 1fr 1fr 1fr 1fr; margin-left: 40px; padding:0;`};
+    ${media.tablet`font-size: 1.8em;  padding:0;`};
     color: white;
     margin-bottom: 40px;
     & p {
-      ${media.tablet` right: 30% !important;width: 100px; padding: 0 10px 0 0; margin: 0;`};
+      ${media.tablet` left:10%;  padding: 0 0 0 0; margin: 0; `};
       padding: 2px 4px;
       display: none;
       font-size: 12px;
