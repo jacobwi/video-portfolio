@@ -60,7 +60,6 @@ const List = styled.ul`
           outline: none;
         }
       }
-
     }
   }
 `

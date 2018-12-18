@@ -56,7 +56,7 @@ const Header = styled.div`
   & p {
     padding: 20px;
     padding-bottom: 80px;
-    ${media.tablet`font-size: 16px;`};
+    ${media.tablet`font-size: 12px; width: 120px; `};
     ${media.phablet`font-size: 12px;`};
     ${media.phone`font-size: 12px;`};
     ${media.thone`font-size: 12px; `};
