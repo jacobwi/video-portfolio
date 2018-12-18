@@ -28,10 +28,11 @@ const List = styled.ul`
   top: 20%;
   right: 10%;
   outline: none;
-  ${media.tablet`display: flex;  margin: 0; text-align: center;`};
+  margin-left: 30px;
+  ${media.tablet`display: flex;  margin: 0 !important; text-align: center;`};
   -webkit-tap-highlight-color: transparent;
   & .icon {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: wheat;
   }
   & li {
@@ -42,7 +43,7 @@ const List = styled.ul`
     color: white;
     margin-bottom: 40px;
     & p {
-      ${media.tablet` width: 100px; padding: 0; margin: 0;`};
+      ${media.tablet` right: 30% !important;width: 100px; padding: 0 10px 0 0; margin: 0;`};
       padding: 2px 4px;
       display: none;
       font-size: 12px;
