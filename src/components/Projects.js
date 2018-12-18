@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from 'styled-components'
 import reddit from '../img/reddit.png'
-import Aclara from '../img/aclara.jpg'
+import Cell from '../img/cell.png'
 import Flutter from '../img/flutter.png'
 
 
@@ -22,7 +22,7 @@ const ProjectsList = [
         "moto": "Built with details and perfection",
         "desc": "This application is currently under development and it's 99% completed. It features real-time analyatics, order managment and tracking features. It also has in-app messaging system for supervisors and works at workstations and integrated with Workday API to show real-time employee location through out the facility.",
         "languages": ["C#", "MVC", "Microsoft SQL", "API"],
-        "img": Aclara,
+        "img": Cell,
         "url": ""
     },
     {
@@ -122,7 +122,7 @@ const ProjectsSlide = styled.div`
     }
 
     & ul {
-        margin-top: 100px;
+        margin-top: 80px;
         position: relative;
         list-style-type: none;
         display: flex;
