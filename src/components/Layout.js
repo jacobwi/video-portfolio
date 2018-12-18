@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
   body {
+    outline: none;
     margin: 0 auto;
     width: 100%;
     height: 100%;

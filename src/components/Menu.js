@@ -19,45 +19,57 @@ const Sidebar = styled.div`
     from {right: -210px;}
     to {right: 0px;}
   }
+  
 `
 
 const List = styled.ul`
   list-style-type: none;
   position: relative;
   top: 20%;
-
-  ${media.tablet`display: flex; text-align: center;`};
-  
+  right: 10%;
+  outline: none;
+  ${media.tablet`display: flex;  margin: 0; text-align: center;`};
+  -webkit-tap-highlight-color: transparent;
   & .icon {
     font-size: 1.6em;
     color: wheat;
-
   }
   & li {
+
     width: 100%;
     height: 20%;
-    ${media.tablet`display: flex; margin-left: 80px;text-align: center;`};
+    ${media.tablet`display: grid; width: 100px; grid-template-columns: 1fr 1fr 1fr 1fr; margin:0; padding:0;`};
     color: white;
     margin-bottom: 40px;
     & p {
+      ${media.tablet` width: 100px; padding: 0; margin: 0;`};
       padding: 2px 4px;
       display: none;
       font-size: 12px;
-      text-align: center;
+
     }
 
     &:hover {
+      
       & .icon {
+        
         display: none;
       }
       & .icon_text {
         position: relative;
         right: 22%;
         display: block;
+        &:focus {
+          outline: none;
+        }
       }
 
     }
   }
+`
+
+const CustomLink = styled(Link)`
+
 `
 
 class Menu extends React.Component {
@@ -77,10 +89,10 @@ class Menu extends React.Component {
       <div>
         <Sidebar>
           <List>
-            <Link to='/'><li><Icons.FaHome className="icon"/><p className="icon_text">Home</p></li></Link>
-            <Link to='/about'><li><Icons.FaUser className="icon"/><p className="icon_text">About</p></li></Link>
-            <Link to='/background'><li><Icons.FaToolbox className="icon"/><p className="icon_text">Exp.</p></li></Link>
-            <Link to='/projects'><li><Icons.FaProjectDiagram className="icon"/><p className="icon_text">Projects</p></li></Link>
+            <CustomLink to='/'><li><Icons.FaHome className="icon"/><p className="icon_text">Home</p></li></CustomLink>
+            <CustomLink to='/about'><li><Icons.FaUser className="icon"/><p className="icon_text">About</p></li></CustomLink>
+            <CustomLink to='/background'><li><Icons.FaToolbox className="icon"/><p className="icon_text">Exp.</p></li></CustomLink>
+            <CustomLink to='/projects'><li><Icons.FaProjectDiagram className="icon"/><p className="icon_text">Projects</p></li></CustomLink>
           </List>
         </Sidebar>
       </div>

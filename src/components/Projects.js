@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import reddit from '../img/reddit.png'
 import Cell from '../img/cell.png'
 import Flutter from '../img/flutter.png'
-
+import media from './Media'
 
 const ProjectsList = [
     {
@@ -119,6 +119,7 @@ const ProjectsSlide = styled.div`
         color: wheat;
         font-size: 1.1rem;
         font-weight: normal;
+        ${media.tablet`font-size: 14px;`};
     }
 
     & ul {
@@ -132,16 +133,18 @@ const ProjectsSlide = styled.div`
         letter-spacing: 2px;
         padding: 10px 10px;
         border-radius: 20px;
-        width: 10%;
+        width:100px;
         font-size: 12px;
         margin: 0 32px auto 0;
         border: solid wheat 1px;
+        ${media.tablet`font-size: 10px;`};
     }
     & p {
         position: relative;
         left: 32%;
         width: 600px;
         text-align: center;
+        ${media.tablet`font-size: 8px; width: 160px; left: 25%;`};
 
     }
 `
@@ -157,7 +160,7 @@ const Year = styled.div`
     p {
         font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
         font-size: 1.0rem;
-
+        ${media.tablet`font-size: 16px;`};
         z-index: 1;
         font-size: 2em;
     }

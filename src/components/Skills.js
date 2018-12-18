@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import SNHU from '../img/snhu.jpg'
 import Aclara from '../img/aclara.jpg'
 import OLE from '../img/ole.jpg'
+import media from './Media'
 
 const SkillsList = [
     {"year": '2017 - Present', 
@@ -42,6 +43,7 @@ const Main = styled.div`
     width: 100%;
     background-color: #031625;
     padding: 0 70px 0 0;
+
 `
 const TimelineItem = styled.a`
     text-decoration: none;
@@ -53,7 +55,7 @@ const TimelineItem = styled.a`
     color: #fff;
     overflow: hidden;
     transition: width 0.5s ease;
-
+ 
     & .img {
         transform: translate3d(0, 0, 0);
         position: absolute;
@@ -63,7 +65,6 @@ const TimelineItem = styled.a`
         background-position: center center;
         transition: filter 0.5s ease;
         filter: blur(3px);
-        
     }
     &:before, &:after {
         transform: translate3d(0, 0, 0);
@@ -105,6 +106,7 @@ const TimelineItem = styled.a`
             opacity: 1;
         }
         & .year {
+
             color: wheat;
         }
         & .img {
@@ -121,7 +123,7 @@ const TimelineContent = styled.div`
     margin: 0 1.618em;
     top: 50%;
     opacity: 0;
-    
+    ${media.tablet`font-size: 8px;`};
     h1 {
         font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
         text-transform: uppercase;
@@ -153,9 +155,9 @@ const Year = styled.div`
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     font-size: 1.0rem;
+    ${media.tablet`font-size: 8px;`};
     p {
         font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-        font-size: 1.0rem;
         line-height: 0;
         z-index: 1;
     }
