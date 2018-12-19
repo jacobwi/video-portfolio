@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Road from '../backgrounds/Road-candies.mp4'
 import WebRoad from '../backgrounds/Road-candies.webm'
 import media from './Media'
+
 const AboutContainer = styled.div`
   display: flex;
   align-items: center;
@@ -88,7 +89,7 @@ export default class Home extends Component {
     return (
       <AboutContainer>
         <Header>
-          <h1>Jacob William</h1>
+          <h1>Jacob William 👋</h1>
           <h2>Software Engineer + UI Designer</h2>
           <ResumeButton>Resume</ResumeButton>
         </Header>

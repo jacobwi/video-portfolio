@@ -52,11 +52,12 @@ const List = styled.ul`
         display: none;
       }
       & .icon_text {
+        animation: fadein 1s ease-out;
         position: relative;
         right: 28%;
         text-align: justify;
         display: block;
-        &:focus {
+        &:active {
           outline: none;
         }
       }
@@ -65,7 +66,7 @@ const List = styled.ul`
 `
 
 const CustomLink = styled(Link)`
-
+  text-decoration: none;
 `
 
 class Menu extends React.Component {

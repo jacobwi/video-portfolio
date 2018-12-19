@@ -74,8 +74,6 @@ const ProjectItem = styled.div`
         left: 0; top: 0;
         width: 100%; height: 100%;
     }
-
-
     &:before {
         background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%);
         z-index: 1;
@@ -83,14 +81,12 @@ const ProjectItem = styled.div`
         transform: translate3d(0, 0, 0) translateY(50%);
         transition: opacity 0.5s ease, transform 0.5s ease;
     }
-
     &:hover {
         &:before {
             opacity: 1;
             transform: translate3d(0, 0, 0) translateY(0);
             transition: opacity 1s ease, transform 1s ease 0.25s;
         }
-
         & .content {
             transition: all 0.75s ease 0.5s;
             opacity: 1;
@@ -133,11 +129,15 @@ const ProjectsSlide = styled.div`
         letter-spacing: 2px;
         padding: 10px 10px;
         border-radius: 20px;
-        width:100px;
+        width:200px;
         font-size: 12px;
         margin: 0 32px auto 0;
         border: solid wheat 1px;
         ${media.tablet`font-size: 10px;`};
+        &:hover {
+            border-color: goldenrod;
+            filter: brightness(180%);
+        }
     }
     & p {
         position: relative;
@@ -145,7 +145,6 @@ const ProjectsSlide = styled.div`
         width: 600px;
         text-align: center;
         ${media.tablet`font-size: 8px; width: 160px; left: 25%;`};
-
     }
 `
 

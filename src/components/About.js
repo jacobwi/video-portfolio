@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Aboutback from '../backgrounds/about.mp4'
 import AboutbackWeb from '../backgrounds/about.webm'
 import media from './Media'
+
 const Main = styled.div`  
   & .video {
     position: absolute;
@@ -44,6 +45,7 @@ const Header = styled.div`
     ${media.phablet`font-size: 12px;`};
     ${media.phone`font-size: 12px;`};
     ${media.thone`font-size: 12px; `};
+
   }
   & h2 {
     color: #C79F5B;
@@ -105,7 +107,7 @@ export default class About extends Component {
     return (
       <Main>
         <Header>
-            <h1>Hey World, my name is</h1>
+            <h1>Hey World🌏 , my name is</h1>
             <h2>Jacob William</h2>
             <p>
               I'm a software engineer who's passionate for innovative technology and digital content. My main focus is to build clean code and use advanced algorithms to deliver the best user-experience apps with high performance. 
