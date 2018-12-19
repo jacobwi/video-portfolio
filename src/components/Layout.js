@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Menu from './Menu';
 import Routes from './Routes';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import Social from './Social';
 
