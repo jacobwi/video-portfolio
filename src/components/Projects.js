@@ -129,11 +129,11 @@ const ProjectsSlide = styled.div`
         letter-spacing: 2px;
         padding: 10px 10px;
         border-radius: 20px;
-        width:200px;
+        width:140px;
         font-size: 12px;
         margin: 0 32px auto 0;
         border: solid wheat 1px;
-        ${media.tablet`font-size: 10px;`};
+        ${media.tablet`font-size: 10px; width:200px;`};
         &:hover {
             border-color: goldenrod;
             filter: brightness(180%);
