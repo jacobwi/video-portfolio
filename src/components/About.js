@@ -122,13 +122,13 @@ export default class About extends Component {
            <p>NodeJS, C#, Flusk, ASP.NET </p>
 
            <h2>Apps</h2>
-           <p>Android Java, React Native, Electron, Flutter</p>
+           <p>Android Java, iOS Swift, React Native, Electron, Flutter</p>
 
            <h2>Database</h2>
            <p>Microsoft SQL, MySQL, NoSQL, Firebase</p>
 
            <h2>Languages</h2>
-           <p>C#, Java, Python, C++, Dart</p>
+           <p>C#, Java, Python, C++, Swift, Dart</p>
         </Languages>
         <video autoPlay loop className="video"> 
             <source src={Aboutback} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
