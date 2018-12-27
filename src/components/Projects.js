@@ -20,7 +20,7 @@ const ProjectsList = [
         "title": 'Manufacturing Multi-purpose Application', 
         "name": "Cell Productivity",
         "moto": "Built with details and perfection",
-        "desc": "This application is currently under development and it's 99% completed. It features real-time analyatics, order managment and tracking features. It also has in-app messaging system for supervisors and works at workstations and integrated with Workday API to show real-time employee location through out the facility.",
+        "desc": "This application is currently under development and it's 99% completed. It features real-time analytics, order management and tracking features. It also has in-app messaging system for supervisors and works at workstations and integrated with Workday API to show real-time employee location through out the facility.",
         "languages": ["C#", "MVC", "Microsoft SQL", "API"],
         "img": Cell,
         "url": ""
