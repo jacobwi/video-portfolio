@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Road from '../backgrounds/Road-candies.mp4'
 import WebRoad from '../backgrounds/Road-candies.webm'
 import media from './Media'
+import ResumeFile from './WilliamWeb.pdf'
 
 const AboutContainer = styled.div`
   display: flex;
@@ -84,6 +85,11 @@ const ResumeButton = styled.button`
   ${media.phone`font-size: 12px;`};
   ${media.thone`font-size: 10px; `};
 `
+
+const ResumeLink = styled.a`
+  text-decoration: none;
+`
+
 export default class Home extends Component {
   render() {
     return (
@@ -91,7 +97,7 @@ export default class Home extends Component {
         <Header>
           <h1>Jacob William 👋</h1>
           <h2>Software Engineer + UI Designer</h2>
-          <ResumeButton>Resume</ResumeButton>
+          <ResumeLink href={ResumeFile}><ResumeButton>Resume</ResumeButton></ResumeLink>
         </Header>
         <video autoPlay loop className="video"> 
             <source src={Road} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
