@@ -7,7 +7,7 @@ import media from './Media'
 const Sidebar = styled.div`
   width: 6.5%;
   height: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   right: 0;
   top: 0;
@@ -26,6 +26,7 @@ const List = styled.ul`
   list-style-type: none;
   position: relative;
   top: 20%;
+  left: 10%;
   outline: none;
   ${media.tablet`display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; right: 4%;`};
   -webkit-tap-highlight-color: transparent;
@@ -54,8 +55,7 @@ const List = styled.ul`
       & .icon_text {
         animation: fadein 1s ease-out;
         position: relative;
-        right: 28%;
-        text-align: justify;
+        right: 18%;
         display: block;
         &:active {
           outline: none;

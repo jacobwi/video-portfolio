@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: black;

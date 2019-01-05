@@ -42,9 +42,12 @@ const Main = styled.div`
         from {opacity: 0;}
         to {opacity: 1;}
     }
+    z-index: 1;
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    background-color: #031625;
+    padding: 0 70px 0 0;
 `
 
 const ProjectItem = styled.div`
@@ -57,13 +60,11 @@ const ProjectItem = styled.div`
     transition: width 0.5s ease;
 
     & .img {
-        transform: translate3d(0, 0, 0);
         position: absolute;
         width: 100%; height: 100%;
         top: 0; left: 0;
         background-size: cover;
-        background-position: center center;
-        transition: filter 0.5s ease;
+        transition: filter 0.3s ease;
         filter: blur(3px);
         
     }
@@ -124,6 +125,7 @@ const ProjectsSlide = styled.div`
         list-style-type: none;
         display: flex;
         justify-content: center;
+        ${media.tablet`flex-direction: column; margin-top: 0px; margin-left: 20px;`};
     }
     & li {
         letter-spacing: 2px;
@@ -133,7 +135,7 @@ const ProjectsSlide = styled.div`
         font-size: 12px;
         margin: 0 32px auto 0;
         border: solid wheat 1px;
-        ${media.tablet`font-size: 10px; width:200px;`};
+        ${media.tablet`font-size: 8px; width:200px;`};
         &:hover {
             border-color: goldenrod;
             filter: brightness(180%);
@@ -158,10 +160,10 @@ const Year = styled.div`
     border-bottom: 1px solid #fff;
     p {
         font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-        font-size: 1.0rem;
-        ${media.tablet`font-size: 16px;`};
+        ${media.tablet`font-size: 16px; margin: 0;`};
         z-index: 1;
-        font-size: 2em;
+        font-size: 1em;
+        
     }
 `
 
@@ -178,9 +180,11 @@ export default class Projects extends Component {
       <Main>
 
         <Slider {...settings} className='slider'>
+
+
         {ProjectsList.map((skill, i) => 
                 <ProjectItem href={skill.url} key={i}>
-                
+
                     <div className='img' style={{backgroundImage: `url(${skill.img})`}}></div>
                     
                     <Year className="year">
