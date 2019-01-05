@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Road from '../backgrounds/Road-candies.mp4'
-import WebRoad from '../backgrounds/Road-candies.webm'
+import Road from '../backgrounds/home.mp4'
+import WebRoad from '../backgrounds/home.webm'
 import media from './Media'
 import ResumeFile from './WilliamWeb.pdf'
 
@@ -100,8 +100,8 @@ export default class Home extends Component {
           <ResumeLink href={ResumeFile}><ResumeButton>Resume</ResumeButton></ResumeLink>
         </Header>
         <video autoPlay loop className="video"> 
-            <source src={Road} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src={WebRoad} type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src={Road} type="video/mp4" />
+            <source src={WebRoad} type="video/webm" />
         </video>
       </AboutContainer>
     )
