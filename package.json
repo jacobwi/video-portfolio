@@ -1,6 +1,11 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
+  "author": {
+    "name": "Jacob William",
+    "email": "amjedcha@gmail.com",
+    "url": "https://jacobwi.io"
+  },
   "private": true,
   "dependencies": {
     "netlify-cli": "^2.6.0",
